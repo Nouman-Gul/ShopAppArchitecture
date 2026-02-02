@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Zabehaty Shop
-//
-//  Created by Rohit Kumar on 02/02/2026.
-//
-
 import UIKit
 
 @main

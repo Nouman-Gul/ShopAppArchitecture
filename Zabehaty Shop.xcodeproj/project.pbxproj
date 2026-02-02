@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA7C3C152F30CD1800CD22A4 /* AppFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = AA7C3C142F30CD1800CD22A4 /* AppFoundation */; };
+		AA7C3C172F30CD1800CD22A4 /* DomainModels in Frameworks */ = {isa = PBXBuildFile; productRef = AA7C3C162F30CD1800CD22A4 /* DomainModels */; };
+		AA7C3C1B2F30CD1800CD22A4 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = AA7C3C1A2F30CD1800CD22A4 /* Modules */; };
+		AA7C3C1D2F30CD1800CD22A4 /* NetworkCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA7C3C1C2F30CD1800CD22A4 /* NetworkCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AA7C3BEF2F30746800CD22A4 /* Zabehaty Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zabehaty Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -15,6 +22,10 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				Packages/AppFoundation,
+				Packages/DomainModels,
+				Packages/Modules,
+				Packages/NetworkCore,
 			);
 			target = AA7C3BEE2F30746800CD22A4 /* Zabehaty Shop */;
 		};
@@ -36,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7C3C1B2F30CD1800CD22A4 /* Modules in Frameworks */,
+				AA7C3C172F30CD1800CD22A4 /* DomainModels in Frameworks */,
+				AA7C3C152F30CD1800CD22A4 /* AppFoundation in Frameworks */,
+				AA7C3C1D2F30CD1800CD22A4 /* NetworkCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7C3BF12F30746800CD22A4 /* Zabehaty Shop */,
+				AA7C3C132F30CD1800CD22A4 /* Frameworks */,
 				AA7C3BF02F30746800CD22A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +72,13 @@
 				AA7C3BEF2F30746800CD22A4 /* Zabehaty Shop.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7C3C132F30CD1800CD22A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +101,10 @@
 			);
 			name = "Zabehaty Shop";
 			packageProductDependencies = (
+				AA7C3C142F30CD1800CD22A4 /* AppFoundation */,
+				AA7C3C162F30CD1800CD22A4 /* DomainModels */,
+				AA7C3C1A2F30CD1800CD22A4 /* Modules */,
+				AA7C3C1C2F30CD1800CD22A4 /* NetworkCore */,
 			);
 			productName = "Zabehaty Shop";
 			productReference = AA7C3BEF2F30746800CD22A4 /* Zabehaty Shop.app */;
@@ -150,8 +177,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,8 +208,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA7C3C142F30CD1800CD22A4 /* AppFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFoundation;
+		};
+		AA7C3C162F30CD1800CD22A4 /* DomainModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DomainModels;
+		};
+		AA7C3C1A2F30CD1800CD22A4 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+		AA7C3C1C2F30CD1800CD22A4 /* NetworkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA7C3BE72F30746800CD22A4 /* Project object */;
 }

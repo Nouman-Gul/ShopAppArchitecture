@@ -1,16 +1,13 @@
-//
-//  ViewController.swift
-//  Zabehaty Shop
-//
-//  Created by Rohit Kumar on 02/02/2026.
-//
-
 import UIKit
+import Modules
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Task {
+            await ProductsProvider.viewModel.loadProduct(by: 1)
+        }
         // Do any additional setup after loading the view.
     }
 
